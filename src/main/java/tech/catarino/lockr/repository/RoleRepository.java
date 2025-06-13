@@ -8,4 +8,6 @@ import tech.catarino.lockr.entities.Role;
 @Repository
 public interface RoleRepository extends JpaRepository<Role, Long> {
 
+    Role findByNameIgnoreCase(String name);
+
 }
